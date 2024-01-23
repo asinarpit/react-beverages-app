@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    @apply font-[Nunito] bg-[#1a1f2b] text-gray-200;
+  }
+
+  button {
+    @apply border;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+}
+
+
+
+.active {
+  font-weight: bold;
+  color: #ee6c4d;
+  border-color: #ee6c4d;
+}

@@ -1,0 +1,55 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+}
+
+.swipper-wrapper {
+  background-color: transparent !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid white;
+  scale: 1.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.product-carousel-wrapper {
+  background: transparent;
+}
+
+.product-carousel-wrapper .swiper-button-next,
+.product-carousel-wrapper .swiper-button-prev {
+  scale: 0.6;
+  background-color: #ee6c4d;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.product-carousel-wrapper .swiper-slide {
+  height: 400px;
+}
