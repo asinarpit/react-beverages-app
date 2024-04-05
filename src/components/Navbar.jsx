@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      initial={{ backgroundColor: "rgb(26, 31, 43)" }}
+      initial={{ backgroundColor: "rgb(26, 31, 43)", backdropFilter: "blur(5px)" }}
       animate={{
         backgroundColor: isHomePage
           ? isScrolled
@@ -39,7 +39,7 @@ const Navbar = () => {
         color: isScrolled || !isHomePage ? "white" : "black",
       }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="fixed z-10 w-full top-0 shadow-xl bg-[#1a1f2b] text-[#e0e0e0]"
+      className="fixed z-10 w-full top-0 shadow-lg bg-[#1a1f2b] text-[#e0e0e0]"
     >
       <nav className="max-w-7xl h-20 mx-auto flex items-center justify-between px-5">
         {/* Mobile menu  */}
@@ -47,8 +47,8 @@ const Navbar = () => {
 
         {/* logo */}
         <img
-          src="https://download.logo.wine/logo/Coca-Cola/Coca-Cola-Logo.wine.png"
-          className="w-24"
+          src="/pop-planet-logo.png"
+          className="w-[150px]"
           alt="log"
         />
 
@@ -82,14 +82,14 @@ const Navbar = () => {
 
         {/* Right side */}
         <div className="flex gap-5">
-          <span className="cursor-pointer">
+          {/* <span className="cursor-pointer">
             {" "}
             <FaSearch size={15} />
           </span>
 
           <span className="cursor-pointer">
             <FaUser size={15} />
-          </span>
+          </span> */}
 
           <span>
             <Cart/>

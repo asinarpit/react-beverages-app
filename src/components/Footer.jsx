@@ -11,7 +11,7 @@ const Footer = () => {
 
                 <div className=' flex justify-between flex-wrap gap-10 px-5 py-10'>
                     <div>
-                        <img  className='w-[200px]' src="https://download.logo.wine/logo/Coca-Cola/Coca-Cola-Logo.wine.png" alt="" />
+                        <img className='w-[250px]' src="/pop-planet-logo.png" alt="" />
                     </div>
 
 
@@ -48,21 +48,21 @@ const Footer = () => {
 
                         <div className='flex gap-3'>
                             <a href="#">
-                                <span><FaYoutube size={40} /></span>
+                                <span><FaYoutube size={30} /></span>
                             </a>
                             <a href="#">
                                 <span>
-                                    < FaSquareXTwitter size={40} />
+                                    < FaSquareXTwitter size={30} />
 
                                 </span>
                             </a>
 
                             <a href="#">
-                                <span>< FaLinkedin size={40} /></span>
+                                <span>< FaLinkedin size={30} /></span>
                             </a>
 
                             <a href="#">
-                                <span>< FaInstagram size={40} /></span>
+                                <span>< FaInstagram size={30} /></span>
                             </a>
 
                         </div>
@@ -77,9 +77,9 @@ const Footer = () => {
 
 
 
-            <div className='p-5 w-full  text-center border-t border-gray-500'>
-                <p>&#169; Arpit Singh. All right reserved.</p>
-            </div>
+                <div className='p-5 w-full  text-center border-t border-gray-500'>
+                    <code>&#169; Arpit Singh. All right reserved.</code>
+                </div>
 
 
 

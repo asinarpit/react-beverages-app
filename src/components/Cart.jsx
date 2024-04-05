@@ -17,37 +17,12 @@ const variants = {
   closed: {
     x: "100%",
     transition: {
-      delay: 0.4,
+      delay: 0.2,
     },
   },
 };
 
-const listVariants = {
-  open: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
 
-  closed: {
-    transition: {
-      staggerChildren: 0.1,
-      staggerDirection: -1,
-    },
-  },
-};
-
-const itemVariants = {
-  open: {
-    y: 0,
-    opacity: 1,
-  },
-
-  closed: {
-    y: 100,
-    opacity: 0,
-  },
-};
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [isCartOpen, setCartOpen] = useState(false);
@@ -74,7 +49,7 @@ const Cart = () => {
       </span>
 
       <motion.div
-        className=" bg-[#1a1f2b] text-[#e0e0e0] fixed top-0 right-0 h-full w-[300px]  sm:w-[50%] z-20 overflow-y-auto"
+        className=" bg-[#1a1f2b] text-[#e0e0e0] fixed top-0 right-0 h-full min-h-screen w-[300px]  sm:w-[50%] z-20 overflow-y-auto"
         variants={variants}
         initial="initial"
         animate={isCartOpen ? "open" : "closed"}
@@ -92,13 +67,10 @@ const Cart = () => {
         {cart.length > 0 ? (
           <>
             <motion.ul
-              initial="closed"
-              animate={isCartOpen ? "open" : "closed"}
-              variants={listVariants}
               className="flex flex-col"
             >
               {cart.map((item) => (
-                <motion.li variants={itemVariants} key={item.id}>
+                <motion.li key={item.id}>
                   <CartItem item={item} />
                 </motion.li>
               ))}

@@ -60,8 +60,8 @@ const ProductCard = ({ item }) => {
             whileHover={{
               borderColor: "#ee6c4d",
               color: "#ee6c4d",
-              
             }}
+
             whileTap={{ scale: 0.9 }}
             onClick={addToCart}
             className="relative py-2 px-4 self-center text-sm font-semibold rounded-full whitespace-nowrap group flex justify-center items-center group overflow-hidden"

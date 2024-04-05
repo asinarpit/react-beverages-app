@@ -69,17 +69,20 @@ const SideDrawer = () => {
       <>
         {/* Sidedrawer  */}
         <motion.div
-          className="bg-[#1a1f2b] text-[#e0e0e0] fixed top-0 left-0 h-full w-[300px] z-20 "
+          className="bg-[#1a1f2b] text-[#e0e0e0] fixed top-0 left-0 h-screen w-[300px] z-20 "
           variants={variants}
           initial="initial"
           animate={isDrawerOpen ? "open" : "closed"}
           transition={{ duration: 0.2, type: "tween" }}
         >
+          <div className="p-5">
           <img
-            src="https://download.logo.wine/logo/Coca-Cola/Coca-Cola-Logo.wine.png"
-            className="h-28 mx-auto"
-            alt="log"
+            src="/pop-planet-logo.png"
+            className="w-[180px] mx-auto"
+            alt="pop planet logo"
           />
+          </div>
+      
 
           <motion.ul
             initial="closed"

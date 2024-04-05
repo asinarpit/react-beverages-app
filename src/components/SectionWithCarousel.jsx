@@ -34,7 +34,7 @@ const SectionWithCarousel = ({ headline, subtext, data }) => {
           </motion.h2>
 
           <div className="flex items-center text-right gap-2 md:gap-5 ">
-            <span className="w-[100px] md:w-[200px] text-sm md:text-2xl font-thin ">
+            <span className="w-[100px] md:w-[200px] text-sm md:text-2xl font-thin italic">
               {subtext}
             </span>
             <hr className="border-gray-100 w-[50px] md:w-[200px]" />
