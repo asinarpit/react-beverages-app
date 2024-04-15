@@ -18,4 +18,4 @@ This is a beverage website created using React.js, Redux Toolkit for state manag
 
 ## Live Demo
 
-Check out the live demo [Beverages Website](https://react-beverage-app.netlify.app).
+Check out the live demo [Beverages Website](https://pop-planet.netlify.app/).
